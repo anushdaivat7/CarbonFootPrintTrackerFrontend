@@ -174,7 +174,7 @@ const ActivityForm = () => {
         value: parseFloat(formData.value)
       };
 
-      const response = await axios.post('http://localhost:8080/api/carbon/log', payload, {
+      const response = await axios.post('https://carbonfootprinttrackerbackendasd.onrender.com/api/carbon/log', payload, {
         headers: {
           'Content-Type': 'application/json'
         }
