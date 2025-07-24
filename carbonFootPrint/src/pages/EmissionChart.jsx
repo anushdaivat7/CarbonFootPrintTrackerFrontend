@@ -31,7 +31,7 @@ const EmissionChart = () => {
     if (!email) return;
 
     axios
-      .get(`http://localhost:8080/api/carbon/userLog/${email}`)
+      .get(`https://carbonfootprinttrackerbackendasd.onrender.com/api/carbon/userLog/${email}`)
       .then((res) => {
         const logs = res.data;
 
