@@ -23,7 +23,7 @@ const SignupPage = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8080/api/carbon/register", {
+      const response = await axios.post("https://carbonfootprinttrackerbackendasd.onrender.com/api/carbon/register", {
         fullName: formData.fullname, // ✅ fixed this line
         email: formData.email,
         password: formData.password,
