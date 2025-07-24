@@ -1,0 +1,17 @@
+# 1. Set correct MIME type for .jsx files
+[[headers]]
+  for = "/*.jsx"
+  [headers.values]
+    Content-Type = "text/javascript"
+
+# 2. SPA fallback for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# 3. Build settings (adapt for your tool)
+[build]
+  command = "npm run build"
+  publish = "dist"       # For Vite
+  # publish = "build"    # For Create React App
